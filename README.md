@@ -2,4 +2,4 @@
 
 
 ## Illustration de l'exécution
-![Scrrenshot](https://github.com/lcharles038/particles/blob/main/Capture.PNG)
+<img src="https://github.com/lcharles038/particles/blob/main/Capture.PNG" width="600"/>
