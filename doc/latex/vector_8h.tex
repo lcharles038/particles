@@ -1,0 +1,130 @@
+\doxysection{include/vector.h File Reference}
+\label{vector_8h}\index{include/vector.h@{include/vector.h}}
+
+
+This file defines vector structure and associated functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vector_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvect}{vect}}
+\begin{DoxyCompactList}\small\item\em Structure definition for vector object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structvect}{vect}} $\ast$ \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}
+\begin{DoxyCompactList}\small\item\em Struct definition for pointer to vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} \mbox{\hyperlink{vector_8h_a6efa5284aa01d8540451b52596ecf80f}{sumvect}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v1, \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v2)
+\item 
+double \mbox{\hyperlink{vector_8h_a6d1bc8f83847e6bae1e8fe6832edd71d}{prodscal}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v1, \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v2)
+\item 
+\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} \mbox{\hyperlink{vector_8h_af1d31ef87029d0d267aaae1f4b8667b8}{prod\+\_\+vect\+\_\+scal}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v, double lambda)
+\item 
+void \mbox{\hyperlink{vector_8h_a67cef42e10d21e5f35a180c54b5b083b}{print\+\_\+vect}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file defines vector structure and associated functions. 
+
+\begin{DoxyAuthor}{Author}
+Louis Charles 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Feb 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}} 
+\index{vector.h@{vector.h}!p\_vect@{p\_vect}}
+\index{p\_vect@{p\_vect}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{p\_vect}{p\_vect}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structvect}{vect}}$\ast$ \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}
+
+
+
+Struct definition for pointer to vector. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{vector_8h_a67cef42e10d21e5f35a180c54b5b083b}} 
+\index{vector.h@{vector.h}!print\_vect@{print\_vect}}
+\index{print\_vect@{print\_vect}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{print\_vect()}{print\_vect()}}
+{\footnotesize\ttfamily void print\+\_\+vect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v }\end{DoxyParamCaption})}
+
+This function prints a vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is the vector to print \\
+\hline
+\end{DoxyParams}
+\mbox{\label{vector_8h_af1d31ef87029d0d267aaae1f4b8667b8}} 
+\index{vector.h@{vector.h}!prod\_vect\_scal@{prod\_vect\_scal}}
+\index{prod\_vect\_scal@{prod\_vect\_scal}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{prod\_vect\_scal()}{prod\_vect\_scal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} prod\+\_\+vect\+\_\+scal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v,  }\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+This function returns the product between a scalar and a vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is the vector \\
+\hline
+{\em lambda} & is the scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of vector v and real lambda -\/ memory allocated by function. 
+\end{DoxyReturn}
+\mbox{\label{vector_8h_a6d1bc8f83847e6bae1e8fe6832edd71d}} 
+\index{vector.h@{vector.h}!prodscal@{prodscal}}
+\index{prodscal@{prodscal}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{prodscal()}{prodscal()}}
+{\footnotesize\ttfamily double prodscal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v1,  }\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v2 }\end{DoxyParamCaption})}
+
+This function returns the scalar product of two vectors
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & is first vector \\
+\hline
+{\em v2} & second vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the scalar product of vectors 
+\end{DoxyReturn}
+\mbox{\label{vector_8h_a6efa5284aa01d8540451b52596ecf80f}} 
+\index{vector.h@{vector.h}!sumvect@{sumvect}}
+\index{sumvect@{sumvect}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{sumvect()}{sumvect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} sumvect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v1,  }\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v2 }\end{DoxyParamCaption})}
+
+This function returns the sum of two vectors
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & is first vector \\
+\hline
+{\em v2} & second vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of vectors -\/ Memory allocated by function. 
+\end{DoxyReturn}

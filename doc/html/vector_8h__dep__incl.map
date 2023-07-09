@@ -1,0 +1,25 @@
+<map id="include/vector.h" name="include/vector.h">
+<area shape="rect" id="node1" title="This file defines vector structure and associated functions." alt="" coords="1158,5,1283,32"/>
+<area shape="rect" id="node2" href="$event_8h.html" title="This file implements the event object." alt="" coords="355,162,478,189"/>
+<area shape="rect" id="node4" href="$simulation-bh_8h.html" title="Binary heap implementation of clash of particles." alt="" coords="864,341,1038,367"/>
+<area shape="rect" id="node14" href="$particle_8h.html" title="This file defines particle structure and associated functions." alt="" coords="849,80,984,107"/>
+<area shape="rect" id="node20" href="$simulation-naive_8h.html" title="Naive implementation of clash of particles." alt="" coords="553,155,696,196"/>
+<area shape="rect" id="node22" href="$vector_8c.html" title="Implementation of vector object and associated functions." alt="" coords="1546,80,1642,107"/>
+<area shape="rect" id="node23" href="$test-vector_8c.html" title="Test program for vector module." alt="" coords="1666,80,1804,107"/>
+<area shape="rect" id="node3" href="$heap_8h.html" title="Min Heap implementation based on binary tree." alt="" coords="255,251,372,278"/>
+<area shape="rect" id="node6" href="$simulation-bh_8c.html" title="Implementation of clash of particle bh algorithm." alt="" coords="646,423,792,449"/>
+<area shape="rect" id="node11" href="$event_8c.html" title="The files implements the event object and associated functions." alt="" coords="396,251,490,278"/>
+<area shape="rect" id="node12" href="$simulation-naive_8c.html" title="Implementation of clash of particle naive algorithm." alt="" coords="514,251,681,278"/>
+<area shape="rect" id="node13" href="$test-event_8c.html" title="Test program for event module." alt="" coords="95,251,231,278"/>
+<area shape="rect" id="node7" href="$heap_8c.html" title="Min heap implementation based on binary trees." alt="" coords="407,341,495,367"/>
+<area shape="rect" id="node8" href="$test-complexity-1mop-heap_8c.html" title="Program for testing the complexity of heap fonctions." alt="" coords="520,333,681,375"/>
+<area shape="rect" id="node9" href="$test-complexity-heap_8c.html" title="Program for testing the complexity of heap fonctions." alt="" coords="34,333,196,375"/>
+<area shape="rect" id="node10" href="$test-correctness-heap_8c.html" title="Program for testing the correctness of heap module." alt="" coords="220,333,383,375"/>
+<area shape="rect" id="node5" href="$clash-of-particles-bh_8c.html" title="This application launches the clash of particles bh simulation." alt="" coords="1190,423,1379,449"/>
+<area shape="rect" id="node15" href="$loader_8h.html" title="Loads a initial situation file." alt="" coords="988,162,1114,189"/>
+<area shape="rect" id="node16" href="$clash-of-particles-naive_8c.html" title="This application launches the clash of particles naive simulation." alt="" coords="756,244,914,285"/>
+<area shape="rect" id="node19" href="$test-particle_8c.html" title="Test program for particle module." alt="" coords="1322,251,1470,278"/>
+<area shape="rect" id="node21" href="$particle_8c.html" title="This file implements the particle object and associated functions." alt="" coords="1189,162,1294,189"/>
+<area shape="rect" id="node17" href="$loader_8c.html" title="This file implements the load particles from file module." alt="" coords="988,251,1084,278"/>
+<area shape="rect" id="node18" href="$test-loader_8c.html" title="Test program for particle loader module." alt="" coords="1108,251,1247,278"/>
+</map>

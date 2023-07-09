@@ -1,0 +1,99 @@
+\doxysection{include/simulation-\/naive.h File Reference}
+\label{simulation-naive_8h}\index{include/simulation-\/naive.h@{include/simulation-\/naive.h}}
+
+
+Naive implementation of clash of particles.  
+
+
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for simulation-\/naive.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{simulation-naive_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{simulation-naive_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{simulation-naive_8h_a70ed59adcb4159ac551058053e649640}{S\+I\+ZE}}~900
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{simulation-naive_8h_a85e0704cf3dcddc42ba25aca578f0e24}{draw\+\_\+particle}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud)
+\begin{DoxyCompactList}\small\item\em Function that draws the particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{simulation-naive_8h_aad3f4815ac62a0c95cfdc3e6ef8c15fd}{simulate\+\_\+naive}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud, double tau\+\_\+max, double tau\+\_\+ref)
+\begin{DoxyCompactList}\small\item\em Function implementing the clash of particles naive algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Naive implementation of clash of particles. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+5 mars 2022
+\end{DoxyDate}
+Library that implements the clash of particles naive algorithm 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{simulation-naive_8h_a70ed59adcb4159ac551058053e649640}} 
+\index{simulation-\/naive.h@{simulation-\/naive.h}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!simulation-\/naive.h@{simulation-\/naive.h}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily \#define S\+I\+ZE~900}
+
+defines the size of the G\+UI window 
+
+\doxysubsection{Function Documentation}
+\mbox{\label{simulation-naive_8h_a85e0704cf3dcddc42ba25aca578f0e24}} 
+\index{simulation-\/naive.h@{simulation-\/naive.h}!draw\_particle@{draw\_particle}}
+\index{draw\_particle@{draw\_particle}!simulation-\/naive.h@{simulation-\/naive.h}}
+\doxysubsubsection{\texorpdfstring{draw\_particle()}{draw\_particle()}}
+{\footnotesize\ttfamily void draw\+\_\+particle (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud }\end{DoxyParamCaption})}
+
+
+
+Function that draws the particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particles} & The number of particles in p\+\_\+part$\ast$ array \\
+\hline
+{\em cloud} & A pointer to an array of p\+\_\+part containing particles to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\label{simulation-naive_8h_aad3f4815ac62a0c95cfdc3e6ef8c15fd}} 
+\index{simulation-\/naive.h@{simulation-\/naive.h}!simulate\_naive@{simulate\_naive}}
+\index{simulate\_naive@{simulate\_naive}!simulation-\/naive.h@{simulation-\/naive.h}}
+\doxysubsubsection{\texorpdfstring{simulate\_naive()}{simulate\_naive()}}
+{\footnotesize\ttfamily void simulate\+\_\+naive (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud,  }\item[{double}]{tau\+\_\+max,  }\item[{double}]{tau\+\_\+ref }\end{DoxyParamCaption})}
+
+
+
+Function implementing the clash of particles naive algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particle} & The number of particles \\
+\hline
+{\em cloud} & A pointer to the particules array \\
+\hline
+{\em tau\+\_\+max} & Max time of simulation \\
+\hline
+{\em tau\+\_\+ref} & Refresh rate of simulation \\
+\hline
+\end{DoxyParams}

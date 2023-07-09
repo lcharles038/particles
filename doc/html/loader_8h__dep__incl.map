@@ -1,0 +1,8 @@
+<map id="include/loader.h" name="include/loader.h">
+<area shape="rect" id="node1" title="Loads a initial situation file." alt="" coords="385,5,511,32"/>
+<area shape="rect" id="node2" href="$clash-of-particles-bh_8c.html" title="This application launches the clash of particles bh simulation." alt="" coords="5,87,195,114"/>
+<area shape="rect" id="node3" href="$clash-of-particles-naive_8c.html" title="This application launches the clash of particles naive simulation." alt="" coords="219,80,376,121"/>
+<area shape="rect" id="node4" href="$loader_8c.html" title="This file implements the load particles from file module." alt="" coords="400,87,496,114"/>
+<area shape="rect" id="node5" href="$test-loader_8c.html" title="Test program for particle loader module." alt="" coords="520,87,659,114"/>
+<area shape="rect" id="node6" href="$test-particle_8c.html" title="Test program for particle module." alt="" coords="683,87,831,114"/>
+</map>

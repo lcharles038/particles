@@ -1,0 +1,97 @@
+\doxysection{src/event.c File Reference}
+\label{event_8c}\index{src/event.c@{src/event.c}}
+
+
+The files implements the event object and associated functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+Include dependency graph for event.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{event_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{event_8c_a9d3326e1faab993c9ae0a63909c021d6}{print\+\_\+event}} (\mbox{\hyperlink{structevent}{event}} e)
+\begin{DoxyCompactList}\small\item\em Prints an event for debugging purpose. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structevent}{event}} $\ast$ \mbox{\hyperlink{event_8c_a8d44f812ad4d1232716f2fb37878d566}{create\+\_\+event}} (double time, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p\+\_\+particle\+\_\+a, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p\+\_\+particle\+\_\+b)
+\item 
+bool \mbox{\hyperlink{event_8c_a8c20d8c809e7530d27cf1da781cb0a0d}{check\+\_\+event}} (\mbox{\hyperlink{structevent}{event}} $\ast$p\+\_\+e)
+\begin{DoxyCompactList}\small\item\em Chechs if event is valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The files implements the event object and associated functions. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+5 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{event_8c_a8c20d8c809e7530d27cf1da781cb0a0d}} 
+\index{event.c@{event.c}!check\_event@{check\_event}}
+\index{check\_event@{check\_event}!event.c@{event.c}}
+\doxysubsubsection{\texorpdfstring{check\_event()}{check\_event()}}
+{\footnotesize\ttfamily bool check\+\_\+event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structevent}{event}} $\ast$}]{p\+\_\+e }\end{DoxyParamCaption})}
+
+
+
+Chechs if event is valid. 
+
+An event is valid if the nb of collisions in the event equals the number of collisions for each particle when checked
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+e} & \+: a poiter to the event to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if event is valid 
+
+false if event is invalid 
+\end{DoxyReturn}
+\mbox{\label{event_8c_a8d44f812ad4d1232716f2fb37878d566}} 
+\index{event.c@{event.c}!create\_event@{create\_event}}
+\index{create\_event@{create\_event}!event.c@{event.c}}
+\doxysubsubsection{\texorpdfstring{create\_event()}{create\_event()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structevent}{event}}$\ast$ create\+\_\+event (\begin{DoxyParamCaption}\item[{double}]{time,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p\+\_\+particle\+\_\+a,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p\+\_\+particle\+\_\+b }\end{DoxyParamCaption})}
+
+This function creates an event
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & is the time of the event \\
+\hline
+{\em p\+\_\+particle\+\_\+a} & is the particle a \\
+\hline
+{\em p\+\_\+particle\+\_\+b} & is the particle b \\
+\hline
+\end{DoxyParams}
+\mbox{\label{event_8c_a9d3326e1faab993c9ae0a63909c021d6}} 
+\index{event.c@{event.c}!print\_event@{print\_event}}
+\index{print\_event@{print\_event}!event.c@{event.c}}
+\doxysubsubsection{\texorpdfstring{print\_event()}{print\_event()}}
+{\footnotesize\ttfamily void print\+\_\+event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structevent}{event}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Prints an event for debugging purpose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to print \\
+\hline
+\end{DoxyParams}

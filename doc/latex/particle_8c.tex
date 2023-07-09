@@ -1,0 +1,201 @@
+\doxysection{src/particle.c File Reference}
+\label{particle_8c}\index{src/particle.c@{src/particle.c}}
+
+
+This file implements the particle object and associated functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+Include dependency graph for particle.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{particle_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{particle_8c_ad3a0611ba2f7b38c3c5d2333fe2e2a6e}{print\+\_\+part}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p)
+\item 
+void \mbox{\hyperlink{particle_8c_a55bc6f1709c9435c8f51d5e244a4f9a2}{update\+\_\+pos}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p, double t)
+\item 
+double \mbox{\hyperlink{particle_8c_a6de4759512b30b72fcb15589740c35f9}{time\+\_\+to\+\_\+vertical}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p)
+\item 
+double \mbox{\hyperlink{particle_8c_a56a07c733b2f1b10a21eaa5aee0f635d}{time\+\_\+to\+\_\+horizontal}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p)
+\item 
+void \mbox{\hyperlink{particle_8c_af784600bc2b18f3aba75f46b4848168a}{update\+\_\+velo\+\_\+vertical}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p)
+\item 
+void \mbox{\hyperlink{particle_8c_a598f5845632f4a952f54e1743f6fdfcb}{update\+\_\+velo\+\_\+horizontal}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p)
+\item 
+double \mbox{\hyperlink{particle_8c_aac3bec4cc8973afb9459a21adb682a6f}{time\+\_\+to\+\_\+collision}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p1, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p2)
+\item 
+void \mbox{\hyperlink{particle_8c_af10eceabf8d908baa1b2a713fa290a45}{update\+\_\+velo\+\_\+collision}} (\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p1, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p2)
+\item 
+\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} \mbox{\hyperlink{particle_8c_a339abe324fdc5d7142f445807f8ba4c7}{create\+\_\+part}} (double posx, double posy, double velox, double veloy, double mass, double radius, int \mbox{\hyperlink{disc_8h_a37dbdc30935031c05304482e1be89d8f}{color}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements the particle object and associated functions. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{particle_8c_a339abe324fdc5d7142f445807f8ba4c7}} 
+\index{particle.c@{particle.c}!create\_part@{create\_part}}
+\index{create\_part@{create\_part}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{create\_part()}{create\_part()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} create\+\_\+part (\begin{DoxyParamCaption}\item[{double}]{posx,  }\item[{double}]{posy,  }\item[{double}]{velox,  }\item[{double}]{veloy,  }\item[{double}]{mass,  }\item[{double}]{radius,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+This function creates a particle -\/ The memory allocatin is done by function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em posx} & is the particle position on the x axe \\
+\hline
+{\em posy} & is the particle position on the y axe \\
+\hline
+{\em velox} & is the particle velocity on the x axe \\
+\hline
+{\em veloy} & is the particle position on the y axe \\
+\hline
+{\em mass} & is the particle mass \\
+\hline
+{\em radius} & is the particle radius \\
+\hline
+{\em color} & is the particle color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created particle (memory allocated by function) 
+\end{DoxyReturn}
+\mbox{\label{particle_8c_ad3a0611ba2f7b38c3c5d2333fe2e2a6e}} 
+\index{particle.c@{particle.c}!print\_part@{print\_part}}
+\index{print\_part@{print\_part}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{print\_part()}{print\_part()}}
+{\footnotesize\ttfamily void print\+\_\+part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p }\end{DoxyParamCaption})}
+
+This function prints a particle
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+\end{DoxyParams}
+\mbox{\label{particle_8c_aac3bec4cc8973afb9459a21adb682a6f}} 
+\index{particle.c@{particle.c}!time\_to\_collision@{time\_to\_collision}}
+\index{time\_to\_collision@{time\_to\_collision}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{time\_to\_collision()}{time\_to\_collision()}}
+{\footnotesize\ttfamily double time\+\_\+to\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p1,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p2 }\end{DoxyParamCaption})}
+
+This function computes the expected time of the collision between two particles
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & is the first particle \\
+\hline
+{\em p2} & is the second particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+time to collision 
+\end{DoxyReturn}
+\mbox{\label{particle_8c_a56a07c733b2f1b10a21eaa5aee0f635d}} 
+\index{particle.c@{particle.c}!time\_to\_horizontal@{time\_to\_horizontal}}
+\index{time\_to\_horizontal@{time\_to\_horizontal}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{time\_to\_horizontal()}{time\_to\_horizontal()}}
+{\footnotesize\ttfamily double time\+\_\+to\+\_\+horizontal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p }\end{DoxyParamCaption})}
+
+This function computes the expected time for a particle to collide an horizontal wall
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+time to collision 
+\end{DoxyReturn}
+\mbox{\label{particle_8c_a6de4759512b30b72fcb15589740c35f9}} 
+\index{particle.c@{particle.c}!time\_to\_vertical@{time\_to\_vertical}}
+\index{time\_to\_vertical@{time\_to\_vertical}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{time\_to\_vertical()}{time\_to\_vertical()}}
+{\footnotesize\ttfamily double time\+\_\+to\+\_\+vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p }\end{DoxyParamCaption})}
+
+This function computes the expected time for a particle to collide a vertical wall
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+time to collision 
+\end{DoxyReturn}
+\mbox{\label{particle_8c_a55bc6f1709c9435c8f51d5e244a4f9a2}} 
+\index{particle.c@{particle.c}!update\_pos@{update\_pos}}
+\index{update\_pos@{update\_pos}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{update\_pos()}{update\_pos()}}
+{\footnotesize\ttfamily void update\+\_\+pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p,  }\item[{double}]{t }\end{DoxyParamCaption})}
+
+This function updates a particle position given an amount of time
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+{\em t} & is the amount of time \\
+\hline
+\end{DoxyParams}
+\mbox{\label{particle_8c_af10eceabf8d908baa1b2a713fa290a45}} 
+\index{particle.c@{particle.c}!update\_velo\_collision@{update\_velo\_collision}}
+\index{update\_velo\_collision@{update\_velo\_collision}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{update\_velo\_collision()}{update\_velo\_collision()}}
+{\footnotesize\ttfamily void update\+\_\+velo\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p1,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p2 }\end{DoxyParamCaption})}
+
+This function updates the velocities of the two particles after collision
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & is the first particle \\
+\hline
+{\em p2} & is the second particle \\
+\hline
+\end{DoxyParams}
+\mbox{\label{particle_8c_a598f5845632f4a952f54e1743f6fdfcb}} 
+\index{particle.c@{particle.c}!update\_velo\_horizontal@{update\_velo\_horizontal}}
+\index{update\_velo\_horizontal@{update\_velo\_horizontal}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{update\_velo\_horizontal()}{update\_velo\_horizontal()}}
+{\footnotesize\ttfamily void update\+\_\+velo\+\_\+horizontal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p }\end{DoxyParamCaption})}
+
+This function updates the velocity of a particle after collision with an horizontal wall
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+\end{DoxyParams}
+\mbox{\label{particle_8c_af784600bc2b18f3aba75f46b4848168a}} 
+\index{particle.c@{particle.c}!update\_velo\_vertical@{update\_velo\_vertical}}
+\index{update\_velo\_vertical@{update\_velo\_vertical}!particle.c@{particle.c}}
+\doxysubsubsection{\texorpdfstring{update\_velo\_vertical()}{update\_velo\_vertical()}}
+{\footnotesize\ttfamily void update\+\_\+velo\+\_\+vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p }\end{DoxyParamCaption})}
+
+This function updates the velocity of a particle after collision with a vertical wall
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the particle \\
+\hline
+\end{DoxyParams}

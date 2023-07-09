@@ -1,0 +1,108 @@
+\doxysection{src/simulation-\/bh.c File Reference}
+\label{simulation-bh_8c}\index{src/simulation-\/bh.c@{src/simulation-\/bh.c}}
+
+
+Implementation of clash of particle bh algorithm.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}disc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}simulation-\/bh.\+h\char`\"{}}\newline
+Include dependency graph for simulation-\/bh.c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulation-bh_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{simulation-bh_8c_a0e8848f3448c346eda53442d3b92924e}{draw\+\_\+particle\+\_\+bh}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud)
+\begin{DoxyCompactList}\small\item\em Function that draws the particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{simulation-bh_8c_a3af81bb745389885d661fe95173e697c}{add\+\_\+events}} (\mbox{\hyperlink{structheap}{heap}} $\ast$p\+\_\+heap, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} p\+\_\+particle, double time\+\_\+event, int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud)
+\begin{DoxyCompactList}\small\item\em Function that adds all the events dealing with one particule in the heap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{simulation-bh_8c_aa0ca3263ec995870fc2b676f9fadd8d2}{simulate\+\_\+bh}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud, double tau\+\_\+max, double tau\+\_\+ref)
+\begin{DoxyCompactList}\small\item\em Function implementing the clash of particles bh algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of clash of particle bh algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{simulation-bh_8c_a3af81bb745389885d661fe95173e697c}} 
+\index{simulation-\/bh.c@{simulation-\/bh.c}!add\_events@{add\_events}}
+\index{add\_events@{add\_events}!simulation-\/bh.c@{simulation-\/bh.c}}
+\doxysubsubsection{\texorpdfstring{add\_events()}{add\_events()}}
+{\footnotesize\ttfamily void add\+\_\+events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structheap}{heap}} $\ast$}]{p\+\_\+heap,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}}}]{p\+\_\+particle,  }\item[{double}]{time\+\_\+event,  }\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud }\end{DoxyParamCaption})}
+
+
+
+Function that adds all the events dealing with one particule in the heap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+heap} & is a pointer to the heap containing the events \\
+\hline
+{\em p\+\_\+particle} & is a pointer to the particle we want to add the next possible events \\
+\hline
+{\em time\+\_\+event} & is the time of the event in which the particle was just involved \\
+\hline
+{\em nb\+\_\+particles} & The number of particles in p\+\_\+part$\ast$ array \\
+\hline
+{\em cloud} & A pointer to an array of p\+\_\+part containing particles to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\label{simulation-bh_8c_a0e8848f3448c346eda53442d3b92924e}} 
+\index{simulation-\/bh.c@{simulation-\/bh.c}!draw\_particle\_bh@{draw\_particle\_bh}}
+\index{draw\_particle\_bh@{draw\_particle\_bh}!simulation-\/bh.c@{simulation-\/bh.c}}
+\doxysubsubsection{\texorpdfstring{draw\_particle\_bh()}{draw\_particle\_bh()}}
+{\footnotesize\ttfamily void draw\+\_\+particle\+\_\+bh (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud }\end{DoxyParamCaption})}
+
+
+
+Function that draws the particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particles} & The number of particles in p\+\_\+part$\ast$ array \\
+\hline
+{\em cloud} & A pointer to an array of p\+\_\+part containing particles to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\label{simulation-bh_8c_aa0ca3263ec995870fc2b676f9fadd8d2}} 
+\index{simulation-\/bh.c@{simulation-\/bh.c}!simulate\_bh@{simulate\_bh}}
+\index{simulate\_bh@{simulate\_bh}!simulation-\/bh.c@{simulation-\/bh.c}}
+\doxysubsubsection{\texorpdfstring{simulate\_bh()}{simulate\_bh()}}
+{\footnotesize\ttfamily void simulate\+\_\+bh (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud,  }\item[{double}]{tau\+\_\+max,  }\item[{double}]{tau\+\_\+ref }\end{DoxyParamCaption})}
+
+
+
+Function implementing the clash of particles bh algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particle} & The number of particles \\
+\hline
+{\em cloud} & A pointer to the particules array \\
+\hline
+{\em tau\+\_\+max} & Max time of simulation \\
+\hline
+{\em tau\+\_\+ref} & Refresh rate of simulation \\
+\hline
+\end{DoxyParams}

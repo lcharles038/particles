@@ -1,0 +1,7 @@
+<map id="include/disc.h" name="include/disc.h">
+<area shape="rect" id="node1" title="Draw DISCs with SDL." alt="" coords="330,5,441,32"/>
+<area shape="rect" id="node2" href="$clash-of-particles-bh_8c.html" title="This application launches the clash of particles bh simulation." alt="" coords="5,87,195,114"/>
+<area shape="rect" id="node3" href="$clash-of-particles-naive_8c.html" title="This application launches the clash of particles naive simulation." alt="" coords="219,80,376,121"/>
+<area shape="rect" id="node4" href="$simulation-bh_8c.html" title="Implementation of clash of particle bh algorithm." alt="" coords="400,87,547,114"/>
+<area shape="rect" id="node5" href="$simulation-naive_8c.html" title="Implementation of clash of particle naive algorithm." alt="" coords="571,87,738,114"/>
+</map>

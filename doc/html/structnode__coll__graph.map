@@ -1,0 +1,6 @@
+<map id="node" name="node">
+<area shape="rect" id="node1" title="Node structure definition." alt="" coords="41,543,96,620"/>
+<area shape="rect" id="node2" href="$structevent.html" title="Event structure definition." alt="" coords="5,373,132,480"/>
+<area shape="rect" id="node3" href="$structpart.html" title="Structure of a particle object." alt="" coords="30,175,107,296"/>
+<area shape="rect" id="node4" href="$structvect.html" title="Structure definition for vector object." alt="" coords="43,5,94,97"/>
+</map>

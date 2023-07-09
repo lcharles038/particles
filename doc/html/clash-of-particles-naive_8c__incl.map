@@ -1,0 +1,12 @@
+<map id="src/clash&#45;of&#45;particles&#45;naive.c" name="src/clash&#45;of&#45;particles&#45;naive.c">
+<area shape="rect" id="node1" title="This application launches the clash of particles naive simulation." alt="" coords="263,5,421,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,76,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="194,169,277,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="151,95,218,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="243,95,311,121"/>
+<area shape="rect" id="node6" href="$loader_8h.html" title="Loads a initial situation file." alt="" coords="503,95,578,121"/>
+<area shape="rect" id="node7" href="$particle_8h.html" title="This file defines particle structure and associated functions." alt="" coords="485,169,567,196"/>
+<area shape="rect" id="node9" href="$disc_8h.html" title="Draw DISCs with SDL." alt="" coords="603,95,663,121"/>
+<area shape="rect" id="node10" href="$simulation-naive_8h.html" title="Naive implementation of clash of particles." alt="" coords="335,95,479,121"/>
+<area shape="rect" id="node8" href="$vector_8h.html" title="This file defines vector structure and associated functions." alt="" coords="422,244,497,271"/>
+</map>

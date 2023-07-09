@@ -1,0 +1,111 @@
+\doxysection{src/vector.c File Reference}
+\label{vector_8c}\index{src/vector.c@{src/vector.c}}
+
+
+Implementation of vector object and associated functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+Include dependency graph for vector.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{vector_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{vector_8c_a67cef42e10d21e5f35a180c54b5b083b}{print\+\_\+vect}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v)
+\item 
+\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} \mbox{\hyperlink{vector_8c_a6efa5284aa01d8540451b52596ecf80f}{sumvect}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v1, \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v2)
+\item 
+double \mbox{\hyperlink{vector_8c_a6d1bc8f83847e6bae1e8fe6832edd71d}{prodscal}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v1, \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v2)
+\item 
+\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} \mbox{\hyperlink{vector_8c_af1d31ef87029d0d267aaae1f4b8667b8}{prod\+\_\+vect\+\_\+scal}} (\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} v, double lambda)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of vector object and associated functions. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{vector_8c_a67cef42e10d21e5f35a180c54b5b083b}} 
+\index{vector.c@{vector.c}!print\_vect@{print\_vect}}
+\index{print\_vect@{print\_vect}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{print\_vect()}{print\_vect()}}
+{\footnotesize\ttfamily void print\+\_\+vect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v }\end{DoxyParamCaption})}
+
+This function prints a vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is the vector to print \\
+\hline
+\end{DoxyParams}
+\mbox{\label{vector_8c_af1d31ef87029d0d267aaae1f4b8667b8}} 
+\index{vector.c@{vector.c}!prod\_vect\_scal@{prod\_vect\_scal}}
+\index{prod\_vect\_scal@{prod\_vect\_scal}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{prod\_vect\_scal()}{prod\_vect\_scal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} prod\+\_\+vect\+\_\+scal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v,  }\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+This function returns the product between a scalar and a vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is the vector \\
+\hline
+{\em lambda} & is the scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of vector v and real lambda -\/ memory allocated by function. 
+\end{DoxyReturn}
+\mbox{\label{vector_8c_a6d1bc8f83847e6bae1e8fe6832edd71d}} 
+\index{vector.c@{vector.c}!prodscal@{prodscal}}
+\index{prodscal@{prodscal}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{prodscal()}{prodscal()}}
+{\footnotesize\ttfamily double prodscal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v1,  }\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v2 }\end{DoxyParamCaption})}
+
+This function returns the scalar product of two vectors
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & is first vector \\
+\hline
+{\em v2} & second vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the scalar product of vectors 
+\end{DoxyReturn}
+\mbox{\label{vector_8c_a6efa5284aa01d8540451b52596ecf80f}} 
+\index{vector.c@{vector.c}!sumvect@{sumvect}}
+\index{sumvect@{sumvect}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{sumvect()}{sumvect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}} sumvect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v1,  }\item[{\mbox{\hyperlink{vector_8h_ab40f28cf05e29aade4aa2a795092d49a}{p\+\_\+vect}}}]{v2 }\end{DoxyParamCaption})}
+
+This function returns the sum of two vectors
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & is first vector \\
+\hline
+{\em v2} & second vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of vectors -\/ Memory allocated by function. 
+\end{DoxyReturn}

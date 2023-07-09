@@ -1,0 +1,75 @@
+\doxysection{include/loader.h File Reference}
+\label{loader_8h}\index{include/loader.h@{include/loader.h}}
+
+
+Loads a initial situation file.  
+
+
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+Include dependency graph for loader.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{loader_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loader_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{loader_8h_aa98925fc08bd1d0e74caa6538058e218}{load\+\_\+particles}} (const char $\ast$filename, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$$\ast$particles)
+\begin{DoxyCompactList}\small\item\em Loads a file of particles initial state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Loads a initial situation file. 
+
+This module loads an initial situation file.~\newline
+ The initial situation file contains a set of particules that are defined with their properties.~\newline
+ The file must have the format below \+:~\newline
+ Simple test with two particles 2 0.\+0,0.\+5,0.\+0004,0.\+0,0.\+5,0.\+01,4 0.\+5,0.\+5,0.\+0,0.\+0,0.\+5,0.\+01,3
+
+The first line describes the fields and will be ignored~\newline
+ The second line contains the number of particles in the file (int)~\newline
+
+
+The next lines describe the particles, one particle per line.~\newline
+
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 février 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{loader_8h_aa98925fc08bd1d0e74caa6538058e218}} 
+\index{loader.h@{loader.h}!load\_particles@{load\_particles}}
+\index{load\_particles@{load\_particles}!loader.h@{loader.h}}
+\doxysubsubsection{\texorpdfstring{load\_particles()}{load\_particles()}}
+{\footnotesize\ttfamily int load\+\_\+particles (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$$\ast$}]{particles }\end{DoxyParamCaption})}
+
+
+
+Loads a file of particles initial state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file containing particles initial states \\
+\hline
+{\em particles} & A pointer to an array of particles that will contain the particles after loading. Memory is allocated by the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of particles stored in the array particles 
+\end{DoxyReturn}

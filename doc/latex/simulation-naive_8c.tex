@@ -1,0 +1,83 @@
+\doxysection{src/simulation-\/naive.c File Reference}
+\label{simulation-naive_8c}\index{src/simulation-\/naive.c@{src/simulation-\/naive.c}}
+
+
+Implementation of clash of particle naive algorithm.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}particle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}disc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}simulation-\/naive.\+h\char`\"{}}\newline
+Include dependency graph for simulation-\/naive.c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulation-naive_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{simulation-naive_8c_a85e0704cf3dcddc42ba25aca578f0e24}{draw\+\_\+particle}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud)
+\begin{DoxyCompactList}\small\item\em Function that draws the particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{simulation-naive_8c_aad3f4815ac62a0c95cfdc3e6ef8c15fd}{simulate\+\_\+naive}} (int nb\+\_\+particle, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$cloud, double tau\+\_\+max, double tau\+\_\+ref)
+\begin{DoxyCompactList}\small\item\em Function implementing the clash of particles naive algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of clash of particle naive algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{simulation-naive_8c_a85e0704cf3dcddc42ba25aca578f0e24}} 
+\index{simulation-\/naive.c@{simulation-\/naive.c}!draw\_particle@{draw\_particle}}
+\index{draw\_particle@{draw\_particle}!simulation-\/naive.c@{simulation-\/naive.c}}
+\doxysubsubsection{\texorpdfstring{draw\_particle()}{draw\_particle()}}
+{\footnotesize\ttfamily void draw\+\_\+particle (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud }\end{DoxyParamCaption})}
+
+
+
+Function that draws the particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particles} & The number of particles in p\+\_\+part$\ast$ array \\
+\hline
+{\em cloud} & A pointer to an array of p\+\_\+part containing particles to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\label{simulation-naive_8c_aad3f4815ac62a0c95cfdc3e6ef8c15fd}} 
+\index{simulation-\/naive.c@{simulation-\/naive.c}!simulate\_naive@{simulate\_naive}}
+\index{simulate\_naive@{simulate\_naive}!simulation-\/naive.c@{simulation-\/naive.c}}
+\doxysubsubsection{\texorpdfstring{simulate\_naive()}{simulate\_naive()}}
+{\footnotesize\ttfamily void simulate\+\_\+naive (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+particle,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$}]{cloud,  }\item[{double}]{tau\+\_\+max,  }\item[{double}]{tau\+\_\+ref }\end{DoxyParamCaption})}
+
+
+
+Function implementing the clash of particles naive algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+particle} & The number of particles \\
+\hline
+{\em cloud} & A pointer to the particules array \\
+\hline
+{\em tau\+\_\+max} & Max time of simulation \\
+\hline
+{\em tau\+\_\+ref} & Refresh rate of simulation \\
+\hline
+\end{DoxyParams}

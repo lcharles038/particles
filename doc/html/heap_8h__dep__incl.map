@@ -1,0 +1,10 @@
+<map id="include/heap.h" name="include/heap.h">
+<area shape="rect" id="node1" title="Min Heap implementation based on binary tree." alt="" coords="443,5,560,32"/>
+<area shape="rect" id="node2" href="$simulation-bh_8h.html" title="Binary heap implementation of clash of particles." alt="" coords="109,87,283,114"/>
+<area shape="rect" id="node5" href="$heap_8c.html" title="Min heap implementation based on binary trees." alt="" coords="308,87,396,114"/>
+<area shape="rect" id="node6" href="$test-complexity-1mop-heap_8c.html" title="Program for testing the complexity of heap fonctions." alt="" coords="421,80,582,121"/>
+<area shape="rect" id="node7" href="$test-complexity-heap_8c.html" title="Program for testing the complexity of heap fonctions." alt="" coords="606,80,767,121"/>
+<area shape="rect" id="node8" href="$test-correctness-heap_8c.html" title="Program for testing the correctness of heap module." alt="" coords="792,80,955,121"/>
+<area shape="rect" id="node3" href="$clash-of-particles-bh_8c.html" title="This application launches the clash of particles bh simulation." alt="" coords="5,169,195,196"/>
+<area shape="rect" id="node4" href="$simulation-bh_8c.html" title="Implementation of clash of particle bh algorithm." alt="" coords="219,169,365,196"/>
+</map>

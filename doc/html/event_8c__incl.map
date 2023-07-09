@@ -1,0 +1,10 @@
+<map id="src/event.c" name="src/event.c">
+<area shape="rect" id="node1" title="The files implements the event object and associated functions." alt="" coords="179,5,272,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="97,80,167,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="191,80,259,107"/>
+<area shape="rect" id="node5" href="$event_8h.html" title="This file implements the event object." alt="" coords="283,80,354,107"/>
+<area shape="rect" id="node8" href="$particle_8h.html" title="This file defines particle structure and associated functions." alt="" coords="355,155,437,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="197,155,280,181"/>
+<area shape="rect" id="node7" href="$vector_8h.html" title="This file defines vector structure and associated functions." alt="" coords="319,229,393,256"/>
+</map>

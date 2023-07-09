@@ -1,0 +1,162 @@
+\doxysection{include/heap.h File Reference}
+\label{heap_8h}\index{include/heap.h@{include/heap.h}}
+
+
+Min Heap implementation based on binary tree.  
+
+
+{\ttfamily \#include \char`\"{}event.\+h\char`\"{}}\newline
+Include dependency graph for heap.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{heap_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{heap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnode}{node}}
+\begin{DoxyCompactList}\small\item\em Node structure definition. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structheap}{heap}}
+\begin{DoxyCompactList}\small\item\em Heap structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structnode}{node}} $\ast$ \mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}}
+\begin{DoxyCompactList}\small\item\em p\+\_\+node is a pointer to a node \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structheap}{heap}} \mbox{\hyperlink{heap_8h_aac5e897ea36c17c387126e1f38cbd4ed}{heap}}
+\begin{DoxyCompactList}\small\item\em Heap structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}} \mbox{\hyperlink{heap_8h_aa39fd327f4f3cb68aee27e5fdf05ed1f}{get\+\_\+father}} (int n, \mbox{\hyperlink{structheap}{heap}} events)
+\begin{DoxyCompactList}\small\item\em Get the father of the n th node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}} \mbox{\hyperlink{heap_8h_a7aac6468804fa16fd3fc2f935a7709b2}{get\+\_\+min\+\_\+child}} (\mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}} \mbox{\hyperlink{structnode}{node}})
+\begin{DoxyCompactList}\small\item\em Get the min child object that has the min time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structevent}{event}} $\ast$ \mbox{\hyperlink{heap_8h_a01ff7262d535a11cfbd629a8e20671a6}{extract\+\_\+min}} (\mbox{\hyperlink{structheap}{heap}} $\ast$events)
+\begin{DoxyCompactList}\small\item\em Return the event with the smallest time\+\_\+to\+\_\+collision. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{heap_8h_a05af0ebb2131c70b97a4c049d16736fa}{insert}} (\mbox{\hyperlink{structevent}{event}} $\ast$new\+\_\+event, \mbox{\hyperlink{structheap}{heap}} $\ast$events)
+\begin{DoxyCompactList}\small\item\em Inserts a new event in the evants heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Min Heap implementation based on binary tree. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6 mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{heap_8h_aac5e897ea36c17c387126e1f38cbd4ed}} 
+\index{heap.h@{heap.h}!heap@{heap}}
+\index{heap@{heap}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{heap}{heap}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structheap}{heap}} \mbox{\hyperlink{structheap}{heap}}}
+
+
+
+Heap structure definition. 
+
+\mbox{\label{heap_8h_a9ea77bfc547230029288c2837c64d1b1}} 
+\index{heap.h@{heap.h}!p\_node@{p\_node}}
+\index{p\_node@{p\_node}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{p\_node}{p\_node}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structnode}{node}}$\ast$ \mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}}}
+
+
+
+p\+\_\+node is a pointer to a node 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{heap_8h_a01ff7262d535a11cfbd629a8e20671a6}} 
+\index{heap.h@{heap.h}!extract\_min@{extract\_min}}
+\index{extract\_min@{extract\_min}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{extract\_min()}{extract\_min()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structevent}{event}}$\ast$ extract\+\_\+min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structheap}{heap}} $\ast$}]{events }\end{DoxyParamCaption})}
+
+
+
+Return the event with the smallest time\+\_\+to\+\_\+collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em events} & the events heap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+event$\ast$ the event with the min time\+\_\+to\+\_\+collision 
+\end{DoxyReturn}
+\mbox{\label{heap_8h_aa39fd327f4f3cb68aee27e5fdf05ed1f}} 
+\index{heap.h@{heap.h}!get\_father@{get\_father}}
+\index{get\_father@{get\_father}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{get\_father()}{get\_father()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}} get\+\_\+father (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structheap}{heap}}}]{events }\end{DoxyParamCaption})}
+
+
+
+Get the father of the n th node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The node number \\
+\hline
+{\em events} & The events heap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+p\+\_\+node The n nodes\textquotesingle{}parent 
+\end{DoxyReturn}
+\mbox{\label{heap_8h_a7aac6468804fa16fd3fc2f935a7709b2}} 
+\index{heap.h@{heap.h}!get\_min\_child@{get\_min\_child}}
+\index{get\_min\_child@{get\_min\_child}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{get\_min\_child()}{get\_min\_child()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}} get\+\_\+min\+\_\+child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{heap_8h_a9ea77bfc547230029288c2837c64d1b1}{p\+\_\+node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Get the min child object that has the min time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the node parent event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+p\+\_\+node the node whose event has the min time 
+\end{DoxyReturn}
+\mbox{\label{heap_8h_a05af0ebb2131c70b97a4c049d16736fa}} 
+\index{heap.h@{heap.h}!insert@{insert}}
+\index{insert@{insert}!heap.h@{heap.h}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily int insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structevent}{event}} $\ast$}]{new\+\_\+event,  }\item[{\mbox{\hyperlink{structheap}{heap}} $\ast$}]{events }\end{DoxyParamCaption})}
+
+
+
+Inserts a new event in the evants heap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+event} & The event to insert \\
+\hline
+{\em events} & Events heap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of events in the heap 
+\end{DoxyReturn}

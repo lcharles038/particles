@@ -1,0 +1,4 @@
+Loader will load file data/two-particles-simple.txt
+2 particles loaded.
+position : (0.000000 , 0.500000) , velocity : (0.000400 , 0.000000) , mass : 0.500000 , radius : 0.010000 , color : 4 , nb collision : 0
+position : (0.500000 , 0.500000) , velocity : (0.000000 , 0.000000) , mass : 0.500000 , radius : 0.010000 , color : 3 , nb collision : 0

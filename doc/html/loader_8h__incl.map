@@ -1,0 +1,5 @@
+<map id="include/loader.h" name="include/loader.h">
+<area shape="rect" id="node1" title="Loads a initial situation file." alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node2" href="$particle_8h.html" title="This file defines particle structure and associated functions." alt="" coords="27,80,109,107"/>
+<area shape="rect" id="node3" href="$vector_8h.html" title="This file defines vector structure and associated functions." alt="" coords="31,155,105,181"/>
+</map>

@@ -1,0 +1,57 @@
+\doxysection{src/loader.c File Reference}
+\label{loader_8c}\index{src/loader.c@{src/loader.c}}
+
+
+This file implements the load particles from file module.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}loader.\+h\char`\"{}}\newline
+Include dependency graph for loader.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{loader_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{loader_8c_aa98925fc08bd1d0e74caa6538058e218}{load\+\_\+particles}} (const char $\ast$filename, \mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$$\ast$particles)
+\begin{DoxyCompactList}\small\item\em Loads a file of particles initial state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements the load particles from file module. 
+
+\begin{DoxyAuthor}{Author}
+Louis C\+H\+A\+R\+L\+ES 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+05 Mars 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{loader_8c_aa98925fc08bd1d0e74caa6538058e218}} 
+\index{loader.c@{loader.c}!load\_particles@{load\_particles}}
+\index{load\_particles@{load\_particles}!loader.c@{loader.c}}
+\doxysubsubsection{\texorpdfstring{load\_particles()}{load\_particles()}}
+{\footnotesize\ttfamily int load\+\_\+particles (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{particle_8h_abfa96c51c0141aff264162e608f191dd}{p\+\_\+part}} $\ast$$\ast$}]{particles }\end{DoxyParamCaption})}
+
+
+
+Loads a file of particles initial state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file containing particles initial states \\
+\hline
+{\em particles} & A pointer to an array of particles that will contain the particles after loading. Memory is allocated by the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of particles stored in the array particles 
+\end{DoxyReturn}
